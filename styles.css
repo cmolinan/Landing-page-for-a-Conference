@@ -1,0 +1,272 @@
+* {
+  --black: #272a31;
+  --orange: #ec5242;
+  --gray: #d3d3d3;
+
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+
+  /* https://www.cdnfonts.com/cocogoose.font */
+
+  /* font-family: 'COCOGOOSE', sans-serif; */
+}
+
+/* background-image: url('../img/redo-comic.background.png');
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e5e5e5;
+}
+
+.mobile-nav {
+  display: none;
+  background-color: white;
+  padding: 20px 30px;
+  margin: 0 40px;
+}
+
+.menu-icon {
+  height: 10px;
+  width: 10px;
+}
+
+.menu-icon img {
+  max-width: 100%;
+  height: auto;
+  width: 33px;
+}
+
+#MobileMenu {
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  width: 87%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: var(--black);
+  margin: 0 8.7145%;
+  gap: 40px;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+#MobileMenu a {
+  color: var(--gray);
+}
+
+.close-menu {
+  position: relative;
+  top: -410px;
+  cursor: pointer;
+  padding-bottom: 0;
+  padding-left: 95%;
+  padding-top: 0;
+  margin: 0;
+}
+
+.homepage-section {
+  background-color: #e5e5e5;
+  padding-top: 30px;
+}
+
+.homepage {
+  background-color: white;
+  padding: 0 30px;
+  padding-top: 25px;
+  margin: 0 8.7145%;
+  background-image: url("images/mobile_intro_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage h1 {
+  color: var(--orange);
+  font-style: bold;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-bottom: 34px;
+  background-image: url('images/icons/dawn.jpg');
+  background-size: 90% 150%;
+  background-position: 380% 20%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage h2 {
+  color: var(--orange);
+  font-size: 20px;
+  font-weight: 30;
+  padding-top: 38px;
+}
+
+.homepage p {
+  color: var(--black);
+  font-size: 12px;
+  line-height: 22px;
+  background-color: white;
+}
+
+.homepage h3 {
+  padding-top: 24px;
+  color: var(--black);
+  font-size: 26px;
+}
+
+.homepage h4 {
+  font-size: 14px;
+  color: var(--black);
+  font-weight: 400;
+  padding-bottom: 75px;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  margin: 0 8.7145%;
+  gap: 10px;
+  padding: 0 12px;
+}
+
+.program h2 {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  padding-top: 30px;
+}
+
+.line {
+  background-color: #ec5242;
+  width: 35px;
+  height: 1px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lecture {
+  display: flex;
+  background-color: #ffffff23;
+  justify-content: space-between;
+  color: var(--gray);
+  height: 80px;
+  padding-left: 20px;
+}
+
+.lecture h3 {
+  color: var(--orange);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  align-self: center;
+}
+
+.lecture p {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 17px;
+  width: 60%;
+  padding: 0 5px 0 10px;
+  align-self: center;
+}
+
+.lecture img {
+  width: 45px;
+  height: 45px;
+  align-self: center;
+}
+
+.rectangle {
+  background-color: #ec5242;
+  width: 80%;
+  height: 70px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  align-self: center;
+  text-align: center;
+}
+
+.speakers {
+  background-color: white;
+  margin: 0 8.7145%;
+  gap: 10px;
+  padding: 0 12px;
+}
+
+.speakers h2 {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 40px;
+}
+
+.lecturer {
+  display: flex;
+  flex-direction: row;
+}
+
+.lecturer img {
+  height: 100px;
+  width: auto;
+}
+
+.details {
+  padding: 0 10px 0 15px;
+}
+
+.details h2 {
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.details h3 {
+  color: var(--orange);
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.details p {
+  color: var(--black);
+  text-align: left;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 17px;
+  width: 100%;
+  align-self: center;
+}
