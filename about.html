@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">  
+  <title>Capstone Project - About</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main id="main-container">
+    <header class="toolbar" id="toolbar">
+      <nav id="mobile-nav" class="mobile-nav">
+        <!-- <a class="menu-icon" href="#mobile-menu" onclick="MobileMenu()">
+          <img src="./images/icons/hamburger-icon.png" alt="Menu">
+        </a> -->
+        
+      </nav>
+    </header>
+    <section class="about-section" id="about-section">
+      <div class="about">
+        <a class="menu-icon" href="#mobile-menu" onclick="MobileMenu()">
+          <img src="./images/icons/hamburger-icon.png" alt="Menu">
+        </a>
+        <!-- MobileMenu Only appears when Hamburguer Icon is pressed -->                
+        <div id="MobileMenu"> 
+          <a class="close-menu" onclick="MobileMenu()">
+            <img src="./images/icons/close-x.svg"  alt="close menu">
+          </a>                          
+          <a href="./index.html"> Home</a>
+          <a href="./about.html"> About</a>
+          <a href="#"> Program </a>
+          <a href="#"> Join </a>
+          <a href="#"> Sponsor </a>
+          <a href="#"> News </a>
+          <a href="#"> CC Campaign </a>
+          
+        </div> 
+        <div>
+          <h2 class="about-h2">Peru's Bicentennial</h2>
+          <h1 class="about-h1">5,000 YEARS OF PERUVIAN HISTORY</h1>          
+        </div>
+        
+        <p class="about-p">
+          Since the Bicentennial Special Project of the Presidency
+          of the Council of Ministers was founded, the road to 
+          commemorating our Bicentennial is full of possibilities, 
+          such as this Conference on Peruvian history and archeology
+        </p>
+        
+        <div class="about-p-contact">
+          <p>
+            Please contact us per Email for any further
+            questions<br>about this Conference<br>
+            <b>prensa@bicentenario.gob.pe</b>
+          </p>
+        </div>
+
+        <div id="logo-extra-info">
+          <h2>Bicentennial of the Independence of Peru Logo</h2>
+          <div class="line line1"></div>
+          <p class="about-p-contact logo-extra-p">This commemorative logo was chosen
+            based on a nationwide contest
+          </p>
+          <img src="./images/Bicentenario.png"  alt="Bicentennial Logo">
+
+          <h2>See the past Bicentennial events</h2>
+          <div class="line line1"></div>
+          <p id="logo-extra-p">
+            Take a look at the last two Bicentennial events which
+             took place in London and Germany             
+          </p>  
+
+          <div class="about-images"> 
+            <div class="about-past1">
+              <div class="about-back">
+                <h3>AUG 2021</h3>
+                <h4>"21 Peruvian intellectuals"</h4>
+              </div>
+            </div>
+          
+            <div class="about-past2">
+              <div class="about-back">
+                <h3>FEB 2022</h3>
+                <h4>“The challenge of US”</h4>
+              </div>
+            </div>
+          </div>  
+        </div>    
+
+        <div class="about-footer">
+          <div class="sponsors">
+            <h2 id="sponsors-h2">Sponsors</h2>
+            <div class="line"></div>
+            <div class="sponsors-image">
+              <img id="bicent-logo" src="./images/bicent.png"  alt="Bicentennial logo"> 
+              <img id="inc-logo" src="./images/INC.png"  alt="National Culture Institute logo">
+              <img id="min-logo" src="./images/mincult.png"  alt="Culture Ministery logo">           
+              <img id="bnp-logo" src="./images/BNP.png"  alt="National Library logo">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="foot-bottom">
+          <div class="foot-logo">
+              <img class="foot-logo" src="./images/Bicentenario.png" alt="cc-icon">
+          </div>
+          <div class="foot-txt">
+              <p class="cr">Peru Bicentennial<br> Lima, Peru. All Rights Reserved</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    
+  </main>
+  <script src="code.js"></script>
+</body>
+</html>

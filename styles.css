@@ -13,15 +13,11 @@
   /* font-family: 'COCOGOOSE', sans-serif; */
 }
 
-/* background-image: url('../img/redo-comic.background.png');
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-
 body {
   height: 100vh;
   width: 100vw;
   background-color: #e5e5e5;
+  overflow: visible;
 }
 
 .mobile-nav {
@@ -34,6 +30,12 @@ body {
 .menu-icon {
   height: 10px;
   width: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.menu-icon-index {
+  padding-left: 0;
 }
 
 .menu-icon img {
@@ -60,6 +62,8 @@ body {
   font-size: 22px;
   font-weight: 500;
   line-height: 17px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #MobileMenu a {
@@ -67,21 +71,21 @@ body {
 }
 
 .close-menu {
-  position: relative;
-  top: -410px;
   cursor: pointer;
   padding-bottom: 0;
-  padding-left: 95%;
   padding-top: 0;
   margin: 0;
+  width: 10%;
 }
 
-.homepage-section {
+.homepage-section,
+.about-section {
   background-color: #e5e5e5;
   padding-top: 30px;
 }
 
-.homepage {
+.homepage,
+.about {
   background-color: white;
   padding: 0 30px;
   padding-top: 25px;
@@ -89,6 +93,14 @@ body {
   background-image: url("images/mobile_intro_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.about {
+  background-image: url("images/mobile_intro_bg_rv.png");
+  background-repeat: no-repeat;
+  background-size: 100% 18%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .homepage h1 {
@@ -102,43 +114,52 @@ body {
   background-size: 90% 150%;
   background-position: 380% 20%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.homepage h2 {
+.homepage h2,
+.about h2 {
   color: var(--orange);
   font-size: 20px;
   font-weight: 30;
   padding-top: 38px;
 }
 
-.homepage p {
+.about h2 {
+  text-align: center;
+  padding-top: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.homepage p,
+.about p {
   color: var(--black);
   font-size: 12px;
   line-height: 22px;
   background-color: white;
 }
 
-.homepage h3 {
-  padding-top: 24px;
-  color: var(--black);
-  font-size: 26px;
-}
-
-.homepage h4 {
-  font-size: 14px;
-  color: var(--black);
-  font-weight: 400;
-  padding-bottom: 75px;
-}
-
-.program {
+.about-p-contact {
   display: flex;
-  flex-direction: column;
-  background-color: var(--black);
-  margin: 0 8.7145%;
-  gap: 10px;
-  padding: 0 12px;
+  color: var(--black);
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.speakers h2 {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .program h2 {
@@ -150,11 +171,221 @@ body {
   padding-top: 30px;
 }
 
+.details h2 {
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.details p {
+  color: var(--black);
+  text-align: left;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 17px;
+  width: 100%;
+  align-self: center;
+}
+
+#logo-extra-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+}
+
+#logo-extra-info h2 {
+  color: var(--black);
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+}
+
+.about p {
+  justify-self: center;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.lecture p {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 17px;
+  width: 60%;
+  padding: 0 5px 0 10px;
+  align-self: center;
+}
+
+.lecturer img {
+  /* height: 100px;
+  width: auto; */
+  width: 30%;
+  height: 30%;
+  max-width: 150px;
+}
+
+.lecture img {
+  width: 45px;
+  height: 45px;
+  align-self: center;
+}
+
+#logo-extra-info p {
+  padding: 0;
+  margin: 0;
+}
+
+#logo-extra-info img {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  width: 80%;
+  padding-bottom: 80px;
+}
+
+#logo-extra-p {
+  color: var(--black);
+  font-size: 10px;
+  line-height: 16px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 80%;
+}
+
+.about h1 {
+  color: var(--orange);
+  font-style: bold;
+  font-size: 31px;
+  font-weight: 800;
+  line-height: 32px;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* .about p1 {
+  text-align: center;
+  padding: 0 0;
+  font-size: 11px;
+  line-height: 22px;
+  width: 80%;
+  justify-self: center;
+} */
+
+.homepage h3,
+.about h3 {
+  padding-top: 24px;
+  color: var(--black);
+  font-size: 26px;
+}
+
+.homepage h4,
+.about h4 {
+  font-size: 14px;
+  color: var(--black);
+  font-weight: 400;
+  padding-bottom: 75px;
+}
+
+.about-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+  align-items: center;
+  width: 95%;
+  object-fit: cover;
+}
+
+.about-past1 {
+  background-image: url("images/21-intelectuals.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+
+.about-past2 {
+  background-image: url("images/nosotros2021.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+
+.about-back {
+  background: rgb(255 0 0 / 51%);
+  height: inherit;
+  width: inherit;
+  min-width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px 0 15px;
+  color: white;
+}
+
+.about-back h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 0;
+}
+
+.about-back h4 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: white;
+  padding: 0;
+  position: relative;
+  top: 5px;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  margin: 0 8.7145%;
+  gap: 10px;
+  padding: 0 12px;
+}
+
 .line {
   background-color: #ec5242;
   width: 35px;
   height: 1px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line1 {
+  width: 15px;
+  height: 1px;
+  margin-top: 9px;
+  margin-bottom: 9px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -177,23 +408,6 @@ body {
   align-self: center;
 }
 
-.lecture p {
-  color: white;
-  text-align: left;
-  font-size: 12px;
-  font-weight: 350;
-  line-height: 17px;
-  width: 60%;
-  padding: 0 5px 0 10px;
-  align-self: center;
-}
-
-.lecture img {
-  width: 45px;
-  height: 45px;
-  align-self: center;
-}
-
 .rectangle {
   background-color: #ec5242;
   width: 80%;
@@ -212,21 +426,11 @@ body {
   padding: 0 12px;
 }
 
-.speakers h2 {
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
 .reviews {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  gap: 40px;
+  gap: 10px;
 }
 
 .lecturer {
@@ -234,23 +438,8 @@ body {
   flex-direction: row;
 }
 
-.lecturer img {
-  height: 100px;
-  width: auto;
-}
-
 .details {
   padding: 0 10px 0 15px;
-}
-
-.details h2 {
-  color: black;
-  text-align: left;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .details h3 {
@@ -261,12 +450,77 @@ body {
   line-height: 22px;
 }
 
-.details p {
-  color: var(--black);
-  text-align: left;
-  font-size: 12px;
-  font-weight: 350;
-  line-height: 17px;
+#sponsors-h2 {
+  color: #d3d3d3;
+  font-size: 18px;
+  padding: 20px 0 5px 0;
+}
+
+.about-footer {
+  padding: 0;
+}
+
+.sponsors {
+  display: block;
+  background-color: #2f3135;
+  padding: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.sponsors-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+
+#bicent-logo {
+  width: 28%;
+  margin: 0;
+  padding: 0 2%;
+}
+
+#inc-logo {
+  width: 20%;
+  margin: 0;
+  padding: 0 2%;
+}
+
+#bnp-logo {
+  width: 28%;
+  margin: 10px;
+  padding: 0 2%;
+}
+
+#min-logo {
+  width: 15%;
+  margin: 0;
+  padding: 0 2%;
+}
+
+.foot-bottom {
+  position: relative;
+  top: -25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.foot-logo {
   width: 100%;
-  align-self: center;
+  padding: 2px 0% 2px 4%;
+  flex: 1;
+}
+
+.foot-txt {
+  padding: 5px 5px;
+  text-align: center;
+  color: var(--gray);
+  padding-left: 2%;
+  font-size: 14px;
+  flex: 1.3;
 }
