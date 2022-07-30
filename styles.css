@@ -14,6 +14,11 @@ body {
   width: 100vw;
   background-color: #e5e5e5;
   overflow: visible;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .mobile-nav {
@@ -123,15 +128,15 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.homepage h2,
-.about h2 {
+.homepage h2 {
   color: var(--orange);
   font-size: 20px;
   font-weight: 30;
   padding-top: 38px;
 }
 
-.about h2 {
+.about h1 {
+  color: var(--orange);
   font-size: 16px;
   font-weight: 30;
   text-align: center;
@@ -145,7 +150,11 @@ body {
   color: var(--black);
   font-size: 12px;
   line-height: 22px;
-  background-color: white;
+}
+
+.homepage p {
+  border: 4px solid white;
+  padding: 12px;
 }
 
 .about-first {
@@ -166,6 +175,7 @@ body {
 }
 
 .about p {
+  background-color: white;
   justify-self: center;
   text-align: center;
   padding-left: 30px;
@@ -248,6 +258,19 @@ body {
   padding-bottom: 0;
 }
 
+.about h2 {
+  color: var(--orange);
+  font-style: bold;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+  padding-bottom: 35px;
+  padding-top: 5px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #logo-extra-info {
   background-color: white;
   display: flex;
@@ -304,19 +327,6 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   width: 100%;
-}
-
-.about h1 {
-  color: var(--orange);
-  font-style: bold;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 28px;
-  padding-bottom: 35px;
-  padding-top: 5px;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .homepage h3,
@@ -745,7 +755,7 @@ body {
     flex: 1.8;
   }
 
-  .about h1 {
+  .about h2 {
     padding-top: 17.2%;
   }
 
@@ -771,7 +781,7 @@ body {
     margin: 0 18% 0 18%;
   }
 
-  .about h2 {
+  .about h1 {
     display: none;
   }
 
