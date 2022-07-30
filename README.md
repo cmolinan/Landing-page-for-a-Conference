@@ -5,6 +5,9 @@
 > This webpage is about a Conference for the Bicentennial of the Independence of Peru
   “Five thousand years of Peruvian history and archeology” 
 
+### Video preview
+
+https://www.loom.com/share/2b1bce4969114fff877094e661bd7149
 
 ## Built With
 
@@ -30,6 +33,9 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments 
+
+- This webpage is based on an original Behance design, posted by Cindi Shin
+  https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 
 
 ## 📝 License
