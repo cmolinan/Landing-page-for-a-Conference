@@ -13,17 +13,32 @@
 </head>
 
 <body>
-  <main class="main-container">
-    <header class="toolbar" id="toolbar">
-
-      <nav id="mobile-nav" class="mobile-nav">
-        <!-- <a class="menu-icon" href="#mobile-menu" onclick="MobileMenu()">
-          <img src="./images/icons/hamburger-icon.png" alt="Menu">
-        </a> -->
-        
-      </nav>
-    </header>
+  <main class="main-container">    
     <section class="homepage-section" id="homepage-section">
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#"> English </a></li>
+          <li><a href="#"> My Page </a></li>
+          <li><a href="#"> Logout </a></li>
+        </ul>
+      </nav>
+  
+      <nav class="web-nav">
+        <a href="index.html" class="logo-img">
+          <img src="./images/Bicentenario.png" alt="Logo" />
+        </a>
+  
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="about.html"> About </a></li>
+          <li><a href="index.html#program"> Program </a></li>
+          <li><a href="#"> Join </a></li>
+          <li><a href=""> Sponsors </a></li>
+          <li><a href="#"> News </a></li>
+          
+        </ul>
+      </nav>
+
       <div class="homepage">
         <a class="menu-icon menu-icon-index" href="#mobile-menu" onclick="MobileMenu()">
           <img src="./images/icons/hamburger-icon.png" alt="Menu">
@@ -33,15 +48,13 @@
           <a class="close-menu" onclick="MobileMenu()">
             <img src="./images/icons/close-x.svg"  alt="close menu">
           </a>                          
-          <a href="./index.html"> Home </a>
+          <a href="./index.html" > Home </a>
           <a href="./about.html"> About </a>
-          <a href="#"> Program </a>
+          <a href="#program" onclick="return MobileMenu()"> Program</a>
           <a href="#"> Join </a>
           <a href="#"> Sponsor </a>
           <a href="#"> News </a>
-          <a href="#"> CC Campaign </a>
           
-
         </div> 
         <h2>Peru's Bicentennial</h2>
         <h1>5,000 YEARS OF PERUVIAN<br>HISTORY
@@ -94,9 +107,14 @@
         <!-- end of program -->
 
         <h4 id="program-see"><u >SEE THE WHOLE PROGRAM</u></h4>
-        <div class="rectangle"><br>Join the Conference</div>
-      </div>
+      
+        <div class="rectangle">
+          <a href="javascript: void(0)">
+          Join the Conference</a>
+        </div>
 
+      </div>
+            
       <div class="speakers">
         <h2>Featured Speakers</h2>
         <div class="line"></div>
@@ -160,6 +178,34 @@
         </div>
       </div>
 
+      <!-- SPONSORS + LOGO -->
+      <div id="about-footer-main-i">
+
+        <div class="about-footer-i">
+          <div class="sponsors-i">
+            <h2 id="sponsors-h2-i">Sponsors</h2>
+            <div class="line line2"></div>
+
+            <div class="sponsors-image-i">
+              <img id="bicent-logo" src="./images/bicent.png"  alt="Bicentennial logo"> 
+              <img id="inc-logo" src="./images/INC.png"  alt="National Culture Institute logo">
+              <img id="min-logo" src="./images/mincult.png"  alt="Culture Ministery logo">           
+              <img id="bnp-logo" src="./images/BNP.png"  alt="National Library logo">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="foot-bottom-M-i">
+          <div class="foot-logo-ic">
+              <img class="foot-logo-i" src="./images/Bicentenario.png" alt="cc-icon">
+          </div>
+          <div class="foot-txt-i">
+              <p>Peru Bicentennial<br> Av. Javier Prado Este-2465, San Isidro-Lima, Peru. <br>All Rights Reserved</p>
+          </div>
+        </div>
+
+      </div>
     </section>
   </main>
   <script src="code.js"></script>

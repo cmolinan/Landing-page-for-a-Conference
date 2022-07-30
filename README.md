@@ -1,16 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My first Capstone Project
+# My first Capstone Project - A landing page for a Conference
 
-> This is XXXXXX
+> This webpage is about a Conference for the Bicentennial of the Independence of Peru
+  “Five thousand years of Peruvian history and archeology” 
+
 
 ## Built With
 
 - HTML / CSS (Flexbox-Grid) / JavaScript
-
-## Online version
-
-[zzzzzzCarlos](https://xxxn.github.io)
 
 ## Getting Started
 
@@ -32,8 +30,7 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments 
-To my teammates on Microverse:
-!!!
+
 
 ## 📝 License
 
