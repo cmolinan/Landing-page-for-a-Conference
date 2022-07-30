@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">  
+  <title>Capstone Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a36c13d2c3.js"  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="main-container">    
+    <section class="homepage-section" id="homepage-section">
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>  
+          <li><a href="#"> English </a></li>
+          <li><a href="#"> My Page </a></li>
+          <li><a href="#"> Logout </a></li>
+        </ul>
+      </nav>
+  
+      <nav class="web-nav">
+        <a href="index.html" class="logo-img">
+          <img src="./images/Bicentenario.png" alt="Logo" />
+        </a>
+  
+        <ul>
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="about.html"> About </a></li>
+          <li><a href="index.html#program"> Program </a></li>
+          <li><a href="#"> Join </a></li>
+          <li><a href=""> Sponsors </a></li>
+          <li><a href="#"> News </a></li>
+          
+        </ul>
+      </nav>
+
+      <div class="homepage">
+        <a class="menu-icon menu-icon-index" href="#mobile-menu" onclick="MobileMenu()">
+          <img src="./images/icons/hamburger-icon.png" alt="Menu">
+        </a>
+        <!-- MobileMenu Only appears when Hamburguer Icon is pressed -->                
+        <div id="MobileMenu"> 
+          <a class="close-menu" onclick="MobileMenu()">
+            <img src="./images/icons/close-x.svg"  alt="close menu">
+          </a>                          
+          <a href="./index.html" > Home </a>
+          <a href="./about.html"> About </a>
+          <a href="#program" onclick="return MobileMenu()"> Program</a>
+          <a href="#"> Join </a>
+          <a href="#"> Sponsor </a>
+          <a href="#"> News </a>
+          
+        </div> 
+        <h2>Peru's Bicentennial</h2>
+        <h1>5,000 YEARS OF PERUVIAN<br>HISTORY
+        </h1>          
+        <p>
+          As part of celebrations of the Bicentennial of
+          the Independence of Peru, we present a Conference 
+          with six experts in Peruvian history 
+          and archeology.
+        </p>
+        <h3>2022.09.29 (THU)</h3>
+        <h4>@Museum of the City of New York, USA</h4>        
+      </div>
+      <div class="program-zone">
+        
+        <h2 id="program-title">Main Program</h2>
+        <div class="line"></div>
+
+        <!-- --Program-- -->
+        <div id="program">
+          <div class="lecture">
+            <img src="./images/icons/program_icon_01.png"  alt="Lecture 1">
+            <h3>Lecture #1</h3> 
+            <p>Walter Alva * Royal Tombs of Sipan: Discovery and Research</p>
+          </div>
+          <div class="lecture">
+            <img src="./images/icons/program_icon_01.png"  alt="Lecture 2">
+            <h3>Lecture #2</h3> 
+            <p>Ruth Shady * Caral: prompt reflection in contemporary society
+            </p>
+          </div>
+          <div class="lecture">
+            <img src="./images/icons/program_icon_01.png"  alt="Lecture 3">
+            <h3>Lecture #3</h3> 
+            <p>Charles Walker * Tupac Amaru II and the rebellions in colonial Peru</p>
+          </div>
+          <div class="lecture">
+            <img src="./images/icons/program_icon_01.png"  alt="Lecture 5">
+            <h3>Lecture #4</h3>
+            <p>Krzysztof Makowski * Facets of social 
+              complexity in ancient Peru</p>
+          </div>
+          <div class="lecture">
+            <img src="./images/icons/program_icon_01.png"  alt="Lecture 6">
+            <h3>Lecture #5</h3> 
+            <p>Giuseppe Orefici * Cahuachi: Nasca 
+              Theocratic Capital</p>
+          </div>
+        </div>
+        <!-- end of program -->
+
+        <h4 id="program-see"><u >SEE THE WHOLE PROGRAM</u></h4>
+      
+        <div class="rectangle">
+          <a href="javascript: void(0)">
+          Join the Conference</a>
+        </div>
+
+      </div>
+            
+      <section class="speakers">
+        <h2>Featured Speakers</h2>
+        <div class="line"></div>
+        
+        <div id="reviews" class="reviews">
+
+        </div>
+      </section>
+
+      <!-- SPONSORS + LOGO -->
+      <footer id="about-footer-main-i">
+
+        <div class="about-footer-i">
+          <div class="sponsors-i">
+            <h2 id="sponsors-h2-i">Sponsors</h2>
+            <div class="line line2"></div>
+
+            <div class="sponsors-image-i">
+              <img id="bicent-logo" src="./images/bicent.png"  alt="Bicentennial logo"> 
+              <img id="inc-logo" src="./images/INC.png"  alt="National Culture Institute logo">
+              <img id="min-logo" src="./images/mincult.png"  alt="Culture Ministery logo">           
+              <img id="bnp-logo" src="./images/BNP.png"  alt="National Library logo">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="foot-bottom-M-i">
+          <div class="foot-logo-ic">
+              <img class="foot-logo-i" src="./images/Bicentenario.png" alt="cc-icon">
+          </div>
+          <div class="foot-txt-i">
+              <p>Peru Bicentennial<br> Av. Javier Prado Este-2465, San Isidro-Lima, Peru. <br>All Rights Reserved</p>
+          </div>
+        </div>
+
+      </footer>
+    </section>
+  </main>
+  <script src="code.js"></script>
+
+</body>
+</html>
